@@ -1,33 +1,335 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+
+    <meta name="description"
+          content="Get in touch with Anmol Keshri for professional connections, collaborations, and conversations.">
+
+    <title>Contact Me | Anmol Keshri</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h3>Contact Me</h3>
-        <hr>
-    </header>
-    <main>
-        <form action="action.php">
-            <ol>
-                <li><input type="text" placeholder="Name"></li><br>
-                <li><input type="text" placeholder="Email"></li><br>
-                <li><input type="number" placeholder="Phone no."></li><br>
-                <li>Relation<br><br><input type="radio" value="Family" name="Relation">Family
-                <input type="radio" value="Friends" name="Relation">Friends
-                <input type="radio" value="Professional" name="Relation">Professional</li><br>
-                <li>Your Thoughts About Me<br><br> 
-                    <textarea name="Thoughts" id="101" placeholder="Please leave your thoughts about me" height ="100"></textarea>
-                </li>
-            </ol>
-            <br>
-            <input type="submit" value="Submit">
 
-        </form>
-    </main>   
+<body class="contact-page">
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">A</span>
+                <span>Anmol<span class="accent">.</span></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="Education.html" class="nav-link">Education</a>
+                <a href="Contact%20Me.html" class="nav-link active">Contact</a>
+            </div>
+
+            <a href="mailto:anmolkeshri7@gmail.com" class="nav-button">
+                Email Me <span>↗</span>
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Contact Hero -->
+        <section class="contact-hero container">
+
+            <p class="eyebrow">LET'S START A CONVERSATION</p>
+
+            <h1>
+                Get in <span class="gradient-text">Touch.</span>
+            </h1>
+
+            <p>
+                Have an interesting idea, want to collaborate on a project,
+                or simply want to connect? I'd love to hear from you.
+            </p>
+
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-section container">
+
+            <!-- Contact Information -->
+            <aside class="contact-info">
+
+                <span class="contact-icon">✉</span>
+
+                <h2>Let's connect.</h2>
+
+                <p class="contact-info-description">
+                    Whether it's technology, coding, entrepreneurship,
+                    cricket, or a new opportunity, feel free to reach out.
+                </p>
+
+                <div class="contact-detail">
+
+                    <span class="contact-detail-icon">✉</span>
+
+                    <div>
+                        <span class="contact-label">EMAIL ADDRESS</span>
+
+                        <a href="mailto:anmolkeshri7@gmail.com">
+                            anmolkeshri7@gmail.com
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="contact-detail">
+
+                    <span class="contact-detail-icon">🎓</span>
+
+                    <div>
+                        <span class="contact-label">EDUCATION</span>
+                        <p>BIT Mesra, Ranchi</p>
+                    </div>
+
+                </div>
+
+                <div class="contact-detail">
+
+                    <span class="contact-detail-icon">💻</span>
+
+                    <div>
+                        <span class="contact-label">INTERESTS</span>
+                        <p>Development, Technology & Innovation</p>
+                    </div>
+
+                </div>
+
+                <div class="contact-socials">
+
+                    <p>FIND ME ONLINE</p>
+
+                    <div class="contact-social-links">
+
+                        <a href="https://www.linkedin.com/in/anmol-keshri-799a07380/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            LinkedIn ↗
+                        </a>
+
+                        <a href="https://leetcode.com/u/anmolkeshri7/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            LeetCode ↗
+                        </a>
+
+                        <a href="https://www.instagram.com/anmolkeshri17/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Instagram ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+            <!-- Contact Form -->
+            <div class="contact-form-card">
+
+                <div class="form-heading">
+                    <p class="eyebrow">YOUR MESSAGE</p>
+                    <h2>Drop me a line.</h2>
+                    <p>Fill in the details below to get in touch.</p>
+                </div>
+
+                <form id="contactForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                maxlength="100"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                maxlength="254"
+                                required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span>(Optional)</span></label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            autocomplete="tel"
+                            maxlength="20">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="relation">How do we know each other? *</label>
+
+                        <select id="relation" name="relation" required>
+                            <option value="" disabled selected>
+                                Select a relationship
+                            </option>
+
+                            <option value="Family">Family</option>
+                            <option value="Friends">Friends</option>
+                            <option value="Professional">Professional</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="thoughts">Your Message *</label>
+
+                        <textarea
+                            id="thoughts"
+                            name="thoughts"
+                            rows="5"
+                            maxlength="3000"
+                            placeholder="Share your thoughts, ideas, feedback, or just say hello..."
+                            required></textarea>
+
+                        <span class="input-hint">
+                            I'd appreciate your thoughts and feedback.
+                        </span>
+                    </div>
+
+                    <button type="submit" class="button button-primary submit-button">
+                        Prepare Email <span>↗</span>
+                    </button>
+
+                    <p class="form-note">
+                        This form opens your default email application.
+                        Your message is not stored on this website.
+                    </p>
+
+                    <p id="formStatus" class="form-status"
+                       role="status" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Closing Section -->
+        <section class="contact-closing container">
+
+            <p>
+                "Every meaningful connection begins with a simple hello."
+            </p>
+
+            <a href="index.html" class="back-home">
+                ← Back to Home
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="index.html" class="logo footer-logo">
+                <span class="logo-symbol">A</span>
+                <span>Anmol<span class="accent">.</span></span>
+            </a>
+
+            <p>
+                © <span id="year"></span> Anmol Keshri.
+                Made with curiosity and code.
+            </p>
+
+            <a href="mailto:anmolkeshri7@gmail.com" class="footer-email">
+                Get in touch ↗
+            </a>
+
+        </div>
+
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+        const contactForm = document.getElementById("contactForm");
+        const formStatus = document.getElementById("formStatus");
+
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (!contactForm.reportValidity()) {
+                return;
+            }
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const relation = document.getElementById("relation").value;
+            const thoughts = document.getElementById("thoughts").value.trim();
+
+            if (!name || !email || !relation || !thoughts) {
+                formStatus.textContent =
+                    "Please complete all required fields.";
+                return;
+            }
+
+            const subject = encodeURIComponent(
+                "Portfolio Contact - " + name
+            );
+
+            const message = [
+                "Hello Anmol,",
+                "",
+                "Name: " + name,
+                "Email: " + email,
+                "Phone: " + (phone || "Not provided"),
+                "Relationship: " + relation,
+                "",
+                "Message:",
+                thoughts
+            ].join("\n");
+
+            const body = encodeURIComponent(message);
+
+            formStatus.textContent =
+                "Opening your email application...";
+
+            window.location.href =
+                "mailto:anmolkeshri7@gmail.com?subject=" +
+                subject + "&body=" + body;
+        });
+    </script>
+
 </body>
 </html>
