@@ -1,64 +1,330 @@
+
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <title>
-            Education Details
-        </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body id="ide1">
-        <header >
-           <h1 id="ide2"> Education </h1>
-        </header>
+<html lang="en">
 
-        <hr>
-        <main id="ide3">
-            <section id="ide4">
-                <table id="ide5">
-                    <thead>
-                    <tr>
-                        <th>Course</th>
-                        <th>Institution</th>
-                        <th>Year</th>
-                        <th>Score</th>
-                    </tr>
-                    </thead>
-                    <tr>
-                        <td>B.tech</td>
-                        <td>Birla Institute Of technology,Ranchi</td>
-                        <td>2024-2028</td>
-                        <td>CGPA : 7.7</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>XII</td>
-                        <td>Oxford Public School,Ranchi</td>
-                        <td>2022-2024</td>
-                        <td>Percentage : 92.2%</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>X</td>
-                        <td>Bishop's School,Ranchi</td>
-                        <td>2010-2022</td>
-                        <td>Percentage : 88.4</td>
-                        
-                    </tr>
-                </table>
-            </section >
-            <hr>
-            <br>
-            <section id="ide6">
-                <h3 id="ide7">SKILLS</h3>
-                <hr>
-                <ul>
-                    <li><b>Programming Languages:</b> C , C++ , Java, Python </li>
-                    <li><b>Libraries/Frameworks:</b>HTML,CSS,JavaScript,React</li>
-                    <li><b>Tools/Platforms:</b>GitHub,VScode</li>
-                    <li><b>Databases:</b>MySQL</li>
-                </ul>
-            </section>
-        </main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </body>
+    <meta name="description"
+          content="Anmol Keshri's academic background, education, and technical skills.">
+
+    <title>Education & Skills | Anmol Keshri</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="education-page">
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">A</span>
+                <span>Anmol<span class="accent">.</span></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="Education.html" class="nav-link active">Education</a>
+                <a href="Contact%20Me.html" class="nav-link">Contact</a>
+            </div>
+
+            <a href="Contact%20Me.html" class="nav-button">
+                Let's Connect <span>↗</span>
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Page Heading -->
+        <section class="education-hero container">
+
+            <p class="eyebrow">MY ACADEMIC JOURNEY</p>
+
+            <h1>
+                Education & <span class="gradient-text">Skills.</span>
+            </h1>
+
+            <p>
+                Building a strong foundation in computer science while
+                continuously learning, experimenting, and developing
+                practical technical skills.
+            </p>
+
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section container">
+
+            <div class="page-section-heading">
+                <div>
+                    <p class="eyebrow">ACADEMICS</p>
+                    <h2>Educational Background</h2>
+                </div>
+
+                <span class="section-count">01 — EDUCATION</span>
+            </div>
+
+            <div class="education-timeline">
+
+                <!-- B.Tech -->
+                <article class="education-card">
+
+                    <div class="timeline-marker">
+                        <span>01</span>
+                    </div>
+
+                    <div class="education-card-content">
+
+                        <div class="education-card-top">
+                            <span class="education-type">UNDERGRADUATE</span>
+                            <span class="education-year">2024 – 2028</span>
+                        </div>
+
+                        <h3>Bachelor of Technology</h3>
+
+                        <p class="course-name">
+                            Computer Science and Engineering
+                        </p>
+
+                        <p class="institution">
+                            Birla Institute of Technology, Mesra, Ranchi
+                        </p>
+
+                        <div class="education-tags">
+                            <span>B.Tech CSE</span>
+                            <span>CGPA: 7.7</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Class XII -->
+                <article class="education-card">
+
+                    <div class="timeline-marker">
+                        <span>02</span>
+                    </div>
+
+                    <div class="education-card-content">
+
+                        <div class="education-card-top">
+                            <span class="education-type">SENIOR SECONDARY</span>
+                            <span class="education-year">2022 – 2024</span>
+                        </div>
+
+                        <h3>Class XII</h3>
+
+                        <p class="institution">
+                            Oxford Public School, Ranchi
+                        </p>
+
+                        <div class="education-tags">
+                            <span>CBSE / Class XII</span>
+                            <span>92.2%</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Class X -->
+                <article class="education-card">
+
+                    <div class="timeline-marker">
+                        <span>03</span>
+                    </div>
+
+                    <div class="education-card-content">
+
+                        <div class="education-card-top">
+                            <span class="education-type">SECONDARY</span>
+                            <span class="education-year">2010 – 2022</span>
+                        </div>
+
+                        <h3>Class X</h3>
+
+                        <p class="institution">
+                            Bishop's School, Ranchi
+                        </p>
+
+                        <div class="education-tags">
+                            <span>Class X</span>
+                            <span>88.4%</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="education-note">
+                Note: Please verify the school dates and examination
+                board labels before publishing.
+            </p>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+
+            <div class="container">
+
+                <div class="page-section-heading">
+                    <div>
+                        <p class="eyebrow">WHAT I WORK WITH</p>
+                        <h2>Technical Skills</h2>
+                    </div>
+
+                    <span class="section-count">02 — SKILLS</span>
+                </div>
+
+                <div class="skills-grid">
+
+                    <!-- Programming -->
+                    <article class="skill-card">
+
+                        <div class="skill-card-icon">⌨</div>
+
+                        <h3>Programming Languages</h3>
+
+                        <p>
+                            Languages I use to develop logic and solve
+                            programming problems.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>C</span>
+                            <span>C++</span>
+                            <span>Java</span>
+                            <span>Python</span>
+                        </div>
+
+                    </article>
+
+                    <!-- Web Development -->
+                    <article class="skill-card">
+
+                        <div class="skill-card-icon">🌐</div>
+
+                        <h3>Web Development</h3>
+
+                        <p>
+                            Technologies for building interactive
+                            websites and web applications.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+
+                    </article>
+
+                    <!-- Databases -->
+                    <article class="skill-card">
+
+                        <div class="skill-card-icon">▤</div>
+
+                        <h3>Databases</h3>
+
+                        <p>
+                            Working with structured data and
+                            relational database systems.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>MySQL</span>
+                            <span>SQL</span>
+                        </div>
+
+                    </article>
+
+                    <!-- Tools -->
+                    <article class="skill-card">
+
+                        <div class="skill-card-icon">⚙</div>
+
+                        <h3>Tools & Platforms</h3>
+
+                        <p>
+                            Tools for writing code, managing projects
+                            and tracking development.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Closing CTA -->
+        <section class="education-cta container">
+
+            <p class="eyebrow">ALWAYS LEARNING</p>
+
+            <h2>
+                Learning today.<br>
+                <span class="gradient-text">Building tomorrow.</span>
+            </h2>
+
+            <p>
+                Every new concept is an opportunity to create something
+                meaningful.
+            </p>
+
+            <a href="index.html" class="button button-primary">
+                Back to Home <span>↗</span>
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="index.html" class="logo footer-logo">
+                <span class="logo-symbol">A</span>
+                <span>Anmol<span class="accent">.</span></span>
+            </a>
+
+            <p>
+                © <span id="year"></span> Anmol Keshri.
+                Made with curiosity and code.
+            </p>
+
+            <a href="mailto:anmolkeshri7@gmail.com" class="footer-email">
+                Get in touch ↗
+            </a>
+
+        </div>
+
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
 </html>

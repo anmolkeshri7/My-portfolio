@@ -857,3 +857,360 @@ img {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* =====================================
+   EDUCATION PAGE
+===================================== */
+
+.education-page {
+    min-height: 100vh;
+}
+
+/* Page introduction */
+
+.education-hero {
+    padding-top: 90px;
+    padding-bottom: 65px;
+    text-align: center;
+}
+
+.education-hero .eyebrow {
+    margin-bottom: 15px;
+}
+
+.education-hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1.2;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.education-hero > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+/* Section headings */
+
+.education-section {
+    padding-bottom: 90px;
+}
+
+.page-section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.page-section-heading .eyebrow {
+    margin-bottom: 8px;
+}
+
+.page-section-heading h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    line-height: 1.3;
+}
+
+.section-count {
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+}
+
+/* Education timeline */
+
+.education-timeline {
+    position: relative;
+    display: grid;
+    gap: 22px;
+}
+
+.education-timeline::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    bottom: 35px;
+    left: 27px;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        var(--accent),
+        var(--accent-secondary),
+        transparent
+    );
+}
+
+.education-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.timeline-marker {
+    position: relative;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(112, 225, 245, 0.35);
+    border-radius: 16px;
+    background: #101827;
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.education-card-content {
+    min-width: 0;
+    padding: 25px 28px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: linear-gradient(
+        140deg,
+        rgba(21, 29, 46, 0.95),
+        rgba(12, 17, 29, 0.95)
+    );
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.education-card-content:hover {
+    transform: translateY(-4px);
+    border-color: rgba(112, 225, 245, 0.4);
+}
+
+.education-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 13px;
+}
+
+.education-type {
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.education-year {
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.education-card-content h3 {
+    font-size: 1.35rem;
+    margin-bottom: 5px;
+}
+
+.course-name {
+    color: var(--accent-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 7px;
+}
+
+.institution {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.education-tags,
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.education-tags {
+    margin-top: 20px;
+}
+
+.education-tags span,
+.skill-tags span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 11px;
+    border: 1px solid rgba(112, 225, 245, 0.15);
+    border-radius: 8px;
+    background: rgba(112, 225, 245, 0.055);
+    color: #cceef5;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.education-note {
+    margin-top: 22px;
+    color: var(--muted);
+    font-size: 0.78rem;
+}
+
+/* Skills section */
+
+.skills-section {
+    padding: 80px 0 90px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.015);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 19px;
+    background: var(--surface);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(167, 139, 250, 0.4);
+}
+
+.skill-card-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 19px;
+    border-radius: 14px;
+    background: linear-gradient(
+        135deg,
+        rgba(112, 225, 245, 0.12),
+        rgba(167, 139, 250, 0.12)
+    );
+    color: var(--accent);
+    font-size: 1.4rem;
+}
+
+.skill-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.skill-card > p {
+    min-height: 50px;
+    margin-bottom: 20px;
+    color: var(--muted);
+    font-size: 0.88rem;
+}
+
+.skill-tags span {
+    border-color: var(--border);
+    background: rgba(255, 255, 255, 0.035);
+    color: var(--text);
+}
+
+/* Education page closing section */
+
+.education-cta {
+    padding-top: 95px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.education-cta .eyebrow {
+    margin-bottom: 15px;
+}
+
+.education-cta h2 {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.3;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.education-cta > p:not(.eyebrow) {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+/* Responsive education layout */
+
+@media (max-width: 620px) {
+    .education-hero {
+        padding-top: 65px;
+        padding-bottom: 50px;
+    }
+
+    .education-hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .page-section-heading {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .education-card {
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .education-timeline::before {
+        left: 18px;
+    }
+
+    .timeline-marker {
+        width: 38px;
+        height: 38px;
+        border-radius: 11px;
+        font-size: 0.72rem;
+    }
+
+    .education-card-content {
+        padding: 20px 16px;
+    }
+
+    .education-card-content h3 {
+        font-size: 1.12rem;
+    }
+
+    .education-card-top {
+        align-items: start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .education-type {
+        font-size: 0.65rem;
+    }
+
+    .skills-section {
+        padding: 60px 0;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .skill-card {
+        padding: 23px;
+    }
+
+    .skill-card > p {
+        min-height: 0;
+    }
+
+    .education-cta {
+        padding-top: 70px;
+        padding-bottom: 75px;
+    }
+}
